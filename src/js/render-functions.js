@@ -14,10 +14,10 @@ export function createGallery(images) {
         <img src="${image.webformatURL}" alt="${image.tags}" />
       </a>
       <div class="info">
-        <p>👍 ${image.likes}</p>
-        <p>👁 ${image.views}</p>
-        <p>💬 ${image.comments}</p>
-        <p>⬇ ${image.downloads}</p>
+        <p><span class="label">Likes</span> ${image.likes}</p>
+        <p><span class="label">Views</span> ${image.views}</p>
+        <p><span class="label">Comments</span> ${image.comments}</p>
+        <p><span class="label">Downloads</span> ${image.downloads}</p>
       </div>
     </li>
   `).join('');
